@@ -1,50 +1,63 @@
-# LinuXpert Quiz - Gamified Linux Learning
-**LinuXpert** is a fun, interactive **bash-based quiz game** that helps you test and improve your Linux knowledge across three difficulty levels: Easy, Medium, and Hard. 
+# LinuXpert – Gamified Linux Quiz (Bash)
 
----
+## Overview
+
+LinuXpert is a **command-line quiz game built using Bash scripting**.
+The game tests users’ **Linux knowledge through multiple-choice questions** across different difficulty levels.
+
+Players must answer questions correctly to gain **XP (experience points)** and progress through levels while managing limited lives.
 
 ## Features
 
-- Command-line, text-based game for Linux enthusiasts
-- Three difficulty levels: Easy, Medium, Hard
-- Gamified XP system:
-  - Correct answer → Gain XP  
-  - Wrong answer → Lose a life
-- 5 questions per level; need at least 3 correct to progress
-- Lives system to challenge your skills
-- Provides final score and motivational feedback
+* Interactive command-line quiz
+* Three difficulty levels:
 
----
+  * Easy
+  * Medium
+  * Hard
+* Randomized questions using `shuf`
+* XP (experience points) reward system
+* Life system (player loses lives for wrong answers)
+* Gamified experience with levels and progression
 
-## How to Play
+## Technologies Used
 
-1. Clone the repository:
+* Bash Shell Scripting
+* Linux Command Line
+* `shuf` command for random question selection
 
-```bash
-git clone <your-repo-url>
-cd LinuXpert-Quiz
+## Game Flow
 
-2. Make the script executable:
-chmod +x linuxpert_quiz.sh
+1. The player enters a username.
+2. The quiz starts with the **Easy level**.
+3. Each level asks **5 random questions**.
+4. Correct answers earn XP.
+5. Wrong answers reduce lives.
+6. If lives reach zero → Game Over.
+7. Passing a level unlocks the next one.
 
-3.Run the quiz:
-./linuxpert_quiz.sh
+## Project Structure
 
-4.Follow the prompts:
+project.sh → main game script
+easy.sh → easy level questions
+medium.sh → medium level questions
+hard.sh → hard level questions
+README.md → project documentation
 
- -Enter your username
- -Answer 5 questions per level (input 1-4)
- -Keep an eye on your Lives ❤️ and XP ⚡
- -Progress through Easy → Medium → Hard
+## How to Run
 
-5.Game Rules:
- -Each correct answer gives you XP points depending on the level:
-   -Easy → 15 XP
-   -Medium → 25 XP
-   -Hard → 40 XP
- -Each wrong answer costs 1 life. You start with 5 lives.
- -You need at least 3 correct answers per level to move forward.
- -The game ends if you lose all lives or complete all levels.
+1. Open a Linux terminal.
+2. Navigate to the project folder.
+3. Run the script:
 
+bash project.sh
 
+## Example Gameplay
 
+* Correct answer → XP gained
+* Wrong answer → Life lost
+* Complete all levels → Become **LinuXpert Champion**
+
+## Author
+
+Riya Thakur
