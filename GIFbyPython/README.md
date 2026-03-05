@@ -2,39 +2,42 @@
 
 ## Overview
 
-This project creates a **GIF animation from multiple images using Python**. The program takes image files as input and combines them into a single animated GIF.
+This project generates an **animated GIF from multiple images using Python**. The program reads image files and combines them into a single GIF animation.
 
 ## Features
 
-* Converts multiple images into a GIF
-* Simple and easy Python script
-* Uses Python image processing libraries
-* Automatically generates an animated GIF file
+* Creates GIF from multiple images
+* Simple Python script
+* Uses the `imageio` library for image processing
+* Generates a looping GIF animation
 
 ## Technologies Used
 
 * Python
-* Pillow (Python Imaging Library)
+* ImageIO library
 
 ## How to Run
 
 1. Install Python on your system.
+
 2. Install the required library:
 
-pip install pillow
+pip install imageio
 
-3. Place the images in the project folder.
+3. Place the images (`team-pic1.png`, `team-pic2.png`) in the project folder.
+
 4. Run the script:
 
 python gif_generator.py
 
-5. The program will generate a GIF file from the images.
+5. The program will create an animated file named **team.gif**.
 
 ## Project Structure
 
-images/ → input images
 gif_generator.py → Python script
-output.gif → generated GIF
+team-pic1.png → input image
+team-pic2.png → input image
+team.gif → generated GIF
 
 ## Author
 
